@@ -29,5 +29,9 @@ public class CalculatorTest {
 		b = 20.06;
 		c = calculator.add(a, b);
 		assert (c == 30.09);
+		a = 10.03;
+		b = 20.009;
+		c = calculator.add(a, b);
+		assert (c == 30.039);
 	}
 }
