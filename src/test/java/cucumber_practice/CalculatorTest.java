@@ -20,6 +20,10 @@ public class CalculatorTest {
 		double b = 20.6;
 		double c = calculator.add(a, b);
 		assert(c == 30.9);
+		a = 10.03;
+		b = 20.06;
+		c =  calculator.add(a, b);
+		assert(c == 30.09);
 	}
 }
 
