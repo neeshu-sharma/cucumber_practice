@@ -14,17 +14,19 @@ public class CalculatorTest {
 		assert(c == 30);
 	}
 	/**
-	 * send scale along with numbers
+	 * send scale along with numbers.
+	 * Client is upset. He don't know what scale is.
+	 * He won't give you ####scale####.
 	 */
 	@Test
 	public void testAddDouble() {
 		double a = 10.3;
 		double b = 20.6;
-		double c = calculator.add(a, b,1);
+		double c = calculator.add(a, b);
 		assert(c == 30.9);
 		a = 10.03;
 		b = 20.06;
-		c =  calculator.add(a, b, 2);
+		c =  calculator.add(a, b);
 		assert(c == 30.09);
 	}
 }
