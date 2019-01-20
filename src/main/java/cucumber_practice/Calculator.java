@@ -8,8 +8,8 @@ public class Calculator {
 		return a+b;
 	}
 
-	public double add(double a, double b) {
-		return new BigDecimal(a+b).setScale(1, BigDecimal.ROUND_HALF_UP).doubleValue();
+	public double add(double a, double b, int scale) {
+		return new BigDecimal(a+b).setScale(scale, BigDecimal.ROUND_HALF_UP).doubleValue();
 	}
 
 }
