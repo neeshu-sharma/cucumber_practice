@@ -13,5 +13,9 @@ public class CalculatorTest {
 		int c = calculator.add(a, b);
 		assert(c == 30);
 	}
+	/**
+	 * New requirement came up.
+	 * Add two doubles.
+	 */
 }
 
