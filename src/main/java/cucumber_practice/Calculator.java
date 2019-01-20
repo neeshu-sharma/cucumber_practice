@@ -1,5 +1,7 @@
 package cucumber_practice;
 
+import java.math.BigDecimal;
+
 public class Calculator {
 
 	public int add(int a, int b) {
@@ -7,8 +9,7 @@ public class Calculator {
 	}
 
 	public double add(double a, double b) {
-		// TODO Auto-generated method stub
-		return a+b;
+		return new BigDecimal(a+b).setScale(1, BigDecimal.ROUND_HALF_UP).doubleValue();
 	}
 
 }
