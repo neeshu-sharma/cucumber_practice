@@ -11,7 +11,7 @@ public class CalculatorTest {
 		int a = 10;
 		int b = 20;
 		int c = calculator.add(a, b);
-		
+		assert(c == 30);
 	}
 }
 
