@@ -6,4 +6,9 @@ public class Calculator {
 		return a+b;
 	}
 
+	public double add(double a, double b) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 }
