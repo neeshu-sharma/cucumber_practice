@@ -25,3 +25,7 @@ Feature: Calculator Addition Feature
     Given Two integers
     Then Return sum of integers
 
+  @tag2
+  Scenario: Sum of two doubles
+    Given Two doubles
+    Then Return sum of doubles
