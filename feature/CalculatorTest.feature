@@ -24,3 +24,4 @@ Feature: Calculator Addition Feature
   Scenario: Sum of two integers
     Given Two integers
     Then Return sum of integers
+
