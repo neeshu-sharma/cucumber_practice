@@ -16,14 +16,19 @@ repositories {
     // You can declare any Maven/Ivy/file repository here.
     jcenter()
 }
-
+def cucumberVersion = '1.2.5'
 dependencies {
-    // This dependency is exported to consumers, that is to say found on their compile classpath.
-    api 'org.apache.commons:commons-math3:3.6.1'
 
-    // This dependency is used internally, and not exposed to consumers on their own compile classpath.
-    implementation 'com.google.guava:guava:26.0-jre'
+	compile "info.cukes:cucumber-core:$cucumberVersion"
+	compile "info.cukes:cucumber-java:$cucumberVersion"
+	compile "info.cukes:cucumber-junit:$cucumberVersion"
+	compile "info.cukes:cucumber-jvm-deps:1.0.5"
+	compile "net.masterthought:cucumber-reporting:4.3.0"
+	compile "info.cukes:gherkin:2.12.2"
 
-    // Use JUnit test framework
-    testImplementation 'junit:junit:4.12'
+    testCompile "junit:junit:4.12"
+	testCompile "org.mockito:mockito-all:1.10.19"
+	testCompile "net.sourceforge.cobertura:cobertura:2.1.1"
+	
+    
 }
